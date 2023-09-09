@@ -55,7 +55,7 @@ namespace CarLotSimulator
             joeysCar.MakeEngineNoise();
             chachysCar.MakeEngineNoise();
             felixCar.MakeEngineNoise();
-            
+
 
             //*************BONUS*************//
 
@@ -69,9 +69,11 @@ namespace CarLotSimulator
 
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
 
+            Console.WriteLine($"Numbers of cars created: { CarLot.numberOfCars}");
+
             foreach(var car in lot.Cars)
             {
-                Console.WriteLine($"Year: {car.Year} Make: {car.Make} Model:{car.Model}");
+                Console.WriteLine($"Year: {car.Year} Make: {car.Make} Model: {car.Model}");
             }
         }
 
